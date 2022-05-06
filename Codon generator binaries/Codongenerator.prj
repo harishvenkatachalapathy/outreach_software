@@ -1,0 +1,71 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2146007237" file="/Users/Harish/Google Drive (not syncing)/Outreach/Codongenerator.prj" location="/Users/Harish/Google Drive (not syncing)/Outreach" name="Codongenerator" target="target.mlapps" target-name="Package App">
+    <param.appname>Codongenerator</param.appname>
+    <param.authnamewatermark>Harish Venkatachalapathy</param.authnamewatermark>
+    <param.email>venka166@umn.edu</param.email>
+    <param.company>Sarkar Lab, UMN</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description>GUI for returning codons for any string of letters. Letters not present in codon table are just shown "as is". For amino acids with multiple codons, the codon displayed is picked randomly each time.</param.description>
+    <param.screenshot>/private/var/folders/4j/sg6mt1px6132mytldtd8wky40000gn/T/tp77c825ec_73c3_44b3_a23e_8b6ebe27a97c.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>25bc590c-69ac-49e9-980c-855624a59a7d</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/Codongenerator.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/Aminoacids_table.svg</file>
+      <file>${PROJECT_ROOT}/Codontable.xlsx</file>
+      <file>${PROJECT_ROOT}/codondict.mat</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/Harish/Google Drive (not syncing)" name="Outreach" optional="false">/Users/Harish/Google Drive (not syncing)/Outreach</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2020a.app</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.14.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
